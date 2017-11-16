@@ -3,34 +3,29 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Galerie</title>
+	<title>WebAnimeList</title>
 	<link rel="stylesheet" href="../styles/styles.css" type="text/css">
-	<link rel="icon" href="../images/soldier.ico">
-	<meta name="viewport" content="width=device-width">
+	<script src="../js/mavo.js"></script>
+	<link rel="stylesheet" href="../styles/mavo.css">
 </head>
 
-<body id="galerieBody">
-	<header id="liens">
-		<span><a href="../index.html"> Git Acceuil</a></span>
-	</header>
-
-	<article class="cdp">
-		<h1 class="intro1">Galerie</h1>
-		<ul id="galerie">
-			<li> <img src="../images/akame.jpg" alt="Veuillez utilisez GoogleChrome"></li>
-			<li> <img src="../images/charlotte.jpg" alt="Veuillez utilisez GoogleChrome"></li>
-			<li> <img src="../images/mirainikki.jpg" alt="Veuillez utilisez GoogleChrome"></li>
-			<li> <img src="../images/parasite.jpg" alt="Veuillez utilisez GoogleChrome"></li>
-			<li> <img src="../images/plastic.jpg" alt="Veuillez utilisez GoogleChrome"></li>
-			<li> <img src="../images/shigatsu.jpg" alt="Veuillez utilisez GoogleChrome"></li>
+<body>
+	<header id="head">
+		<ul id="menu">
+			<li><a href="#head">Home</a></li>
+			<li><a href="./pages/gallery.html">Gallery</a></li>
 		</ul>
-	</article>
+	</header>
+	<div mv-app="commentform" mv-storage="local" mv-autosave="0">
+		<article property="pet" mv-multiple>
+			<h1 property="name">Adam Catlace</h1> Born on
+			<time property="birthday" datetime="2014-06-01">1 Jun 2014</time>
+		</article>
+	</div>
 
-	<footer class="contact_liens">
-
+	<footer id="footer">
+		<span>By Reds</span>
 	</footer>
-
-
 </body>
 
 </html>
